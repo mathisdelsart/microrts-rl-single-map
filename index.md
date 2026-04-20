@@ -460,11 +460,29 @@ code, pre { font-family: "JetBrains Mono", "SF Mono", Menlo, monospace !importan
 .results-figures.grid-2x2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1.25rem 2rem;
+  gap: 1.5rem 2rem;
+  align-items: start;
 }
-.results-figures.grid-2x2 figure { margin: 0; }
+.results-figures.grid-2x2 figure {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+/* Fixed-height frames so the 4 metrics visually line up despite
+   very different native aspect ratios. */
+.results-figures.grid-2x2 figure > img {
+  width: 100%;
+  height: 22rem;
+  object-fit: contain;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0.75rem;
+  box-sizing: border-box;
+}
 @media (max-width: 48em) {
   .results-figures.grid-2x2 { grid-template-columns: 1fr; }
+  .results-figures.grid-2x2 figure > img { height: 16rem; }
 }
 
 /* Summary pair: force both frames to a fixed height so the two images
