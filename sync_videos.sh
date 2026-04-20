@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 # ──────────────────────────────────────────────────────────────────────────
-# Build looping GIFs for the WiP Jekyll site from MP4 recordings.
+# Build looping GIFs for the microrts-rl-single-map Jekyll site from MP4 recordings.
 #
 # Pipeline:
 #   1. `microrts_agent/record_bestrl_vs_tournament.sh` generates the source
 #      MP4s under $SRC (1 game per position × 12 tournament bots = 24 files).
 #   2. This script converts each MP4 → GIF with the parameters tuned in our
-#      WiP page iteration (see below).
+#      site-page iteration (see below).
 #
 # GIF parameters (each was chosen deliberately; change with care):
 #   crop=640:612:0:28    Remove the 28 px black band at the top (recording
@@ -31,7 +31,7 @@
 set -e
 
 SRC="/Users/mathisdelsart/Desktop/MasterThesis/outputs/recordings"
-DST="/Users/mathisdelsart/Desktop/MasterThesis/WiP-SingleMapAgent-MicroRTS/videos"
+DST="/Users/mathisdelsart/Desktop/MasterThesis/microrts-rl-single-map/videos"
 MAP_SHORT="basesWorkers16x16A"
 
 BOTS=(
