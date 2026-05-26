@@ -29,7 +29,7 @@ The site is organised into three sections that mirror the paper's evaluation pro
 | Win rate (deterministic play) | **97.2 %** |
 | Map | `basesWorkers16x16A` (16×16) |
 
-The single loss occurs against `POWorkerRush` when the agent starts in position P0.
+The single loss occurs against `WorkerRush` when the agent starts in position P0.
 
 ---
 
@@ -41,8 +41,8 @@ The single loss occurs against `POWorkerRush` when the agent starts in position 
     <th width="50%">vs <strong>TMA</strong></th>
   </tr>
   <tr>
-    <td align="center"><img src="videos/BestRL-350M_vs_RAISocketAI_P0.gif" alt="BestRL-350M vs RAISocketAI (P0)" width="400" height="400"></td>
-    <td align="center"><img src="videos/BestRL-350M_vs_TMA_P0.gif" alt="BestRL-350M vs TMA (P0)" width="400" height="400"></td>
+    <td align="center"><img src="videos/UECD-Best_vs_RAISocketAI_P0.gif" alt="UECD-Best vs RAISocketAI (P0)" width="400" height="400"></td>
+    <td align="center"><img src="videos/UECD-Best_vs_TMA_P0.gif" alt="UECD-Best vs TMA (P0)" width="400" height="400"></td>
   </tr>
   <tr>
     <td align="center">Our agent starts in P0 — <strong>Win</strong></td>
@@ -70,7 +70,7 @@ All 36 recordings and their starting-position variants are available on the [liv
 │   ├── nash_scores.png
 │   └── robustness_score.png
 ├── videos/              # One GIF per (opponent, starting position)
-│   └── BestRL-350M_vs_<Opponent>_P{0,1}.gif
+│   └── UECD-Best_vs_<Opponent>_P{0,1}.gif
 ├── screenshots/         # Page screenshots used in this README
 ├── sync_videos.sh       # Helper to refresh GIFs from the training repo
 ├── Gemfile              # Ruby dependencies (github-pages gem)

@@ -607,7 +607,7 @@ code, pre { font-family: "JetBrains Mono", "SF Mono", Menlo, monospace !importan
   <div class="stat-card">
     <div class="stat-label">Wins</div>
     <div class="stat-value">35</div>
-    <div class="stat-note">1 loss (POWorkerRush, P0)</div>
+    <div class="stat-note">1 loss (WorkerRush, P0)</div>
   </div>
   <div class="stat-card">
     <div class="stat-label">Win rate</div>
@@ -634,7 +634,7 @@ This page hosts the supplementary material for the Work-in-Progress paper on com
 <a href="#vs-allfeatsrl-100m">vs AllFeatsRL-100M</a>
 <a href="#vs-phasedrl-300m">vs PhasedRL-300M</a>
 <a href="#vs-coacai">vs CoacAI</a>
-<a href="#vs-poworkerrush">vs POWorkerRush</a>
+<a href="#vs-workerrush">vs WorkerRush</a>
 <a href="#vs-mayari">vs Mayari</a>
 <a href="#vs-mixedbot">vs MixedBot</a>
 <a href="#vs-droplet">vs Droplet</a>
@@ -642,7 +642,7 @@ This page hosts the supplementary material for the Work-in-Progress paper on com
 <a href="#vs-tiamat">vs Tiamat</a>
 <a href="#vs-strategytactics">vs StrategyTactics</a>
 <a href="#vs-naivemcts">vs NaiveMCTS</a>
-<a href="#vs-polightrush">vs POLightRush</a>
+<a href="#vs-lightrush">vs LightRush</a>
 <a href="#vs-randombiasedai">vs RandomBiasedAI</a>
 </div>
 <a href="#detailed-tournament-analysis">Detailed analysis</a>
@@ -666,149 +666,149 @@ Overall ranking of our agent against every opponent on the final 16×16 single-m
 
 <h2 id="example-games">Example games</h2>
 
-Recordings below show our single-map agent (`BestRL-350M`) playing one game per starting position against each opponent of the tournament, on the `basesWorkers16x16A` map. All games are played with **deterministic actions** (argmax over the policy), matching the tournament protocol. **Left column**: our agent starts in position P0 (top-left corner). **Right column**: our agent starts in position P1 (bottom-right corner). Opponents are listed in the tournament order of strength.
+Recordings below show our single-map agent (`UECD-Best`) playing one game per starting position against each opponent of the tournament, on the `basesWorkers16x16A` map. All games are played with **deterministic actions** (argmax over the policy), matching the tournament protocol. **Left column**: our agent starts in position P0 (top-left corner). **Right column**: our agent starts in position P1 (bottom-right corner). Opponents are listed in the tournament order of strength.
 
 <div class="matchup">
 <h3 id="vs-raisocketai">vs RAISocketAI <a href="https://github.com/sgoodfriend/rl-algo-impls" class="ref-link" target="_blank" rel="noopener">source ↗</a></h3>
 <div class="video-grid">
-<figure><img src="videos/BestRL-350M_vs_RAISocketAI_P0.gif" alt="" loading="lazy"><figcaption><span>Our agent plays in P0 position</span><span class="outcome win">Win</span></figcaption></figure>
-<figure><img src="videos/BestRL-350M_vs_RAISocketAI_P1.gif" alt="" loading="lazy"><figcaption><span>Our agent plays in P1 position</span><span class="outcome win">Win</span></figcaption></figure>
+<figure><img src="videos/UECD-Best_vs_RAISocketAI_P0.gif" alt="" loading="lazy"><figcaption><span>Our agent plays in P0 position</span><span class="outcome win">Win</span></figcaption></figure>
+<figure><img src="videos/UECD-Best_vs_RAISocketAI_P1.gif" alt="" loading="lazy"><figcaption><span>Our agent plays in P1 position</span><span class="outcome win">Win</span></figcaption></figure>
 </div>
 </div>
 
 <div class="matchup">
 <h3 id="vs-utsimass">vs UtsImass <a href="https://github.com/narsue/UTS_Imass" class="ref-link" target="_blank" rel="noopener">source ↗</a></h3>
 <div class="video-grid">
-<figure><img src="videos/BestRL-350M_vs_UtsImass_P0.gif" alt="" loading="lazy"><figcaption><span>Our agent plays in P0 position</span><span class="outcome win">Win</span></figcaption></figure>
-<figure><img src="videos/BestRL-350M_vs_UtsImass_P1.gif" alt="" loading="lazy"><figcaption><span>Our agent plays in P1 position</span><span class="outcome win">Win</span></figcaption></figure>
+<figure><img src="videos/UECD-Best_vs_UtsImass_P0.gif" alt="" loading="lazy"><figcaption><span>Our agent plays in P0 position</span><span class="outcome win">Win</span></figcaption></figure>
+<figure><img src="videos/UECD-Best_vs_UtsImass_P1.gif" alt="" loading="lazy"><figcaption><span>Our agent plays in P1 position</span><span class="outcome win">Win</span></figcaption></figure>
 </div>
 </div>
 
 <div class="matchup">
 <h3 id="vs-tma">vs TMA <a href="https://github.com/MazzaAlessandro/TMA" class="ref-link" target="_blank" rel="noopener">source ↗</a></h3>
 <div class="video-grid">
-<figure><img src="videos/BestRL-350M_vs_TMA_P0.gif" alt="" loading="lazy"><figcaption><span>Our agent plays in P0 position</span><span class="outcome win">Win</span></figcaption></figure>
-<figure><img src="videos/BestRL-350M_vs_TMA_P1.gif" alt="" loading="lazy"><figcaption><span>Our agent plays in P1 position</span><span class="outcome win">Win</span></figcaption></figure>
+<figure><img src="videos/UECD-Best_vs_TMA_P0.gif" alt="" loading="lazy"><figcaption><span>Our agent plays in P0 position</span><span class="outcome win">Win</span></figcaption></figure>
+<figure><img src="videos/UECD-Best_vs_TMA_P1.gif" alt="" loading="lazy"><figcaption><span>Our agent plays in P1 position</span><span class="outcome win">Win</span></figcaption></figure>
 </div>
 </div>
 
 <div class="matchup">
 <h3 id="vs-topfeatsrl-100m">vs TopFeatsRL-100M <a href="https://github.com/mathisdelsart/microrts-drl-uecd" class="ref-link" target="_blank" rel="noopener">source ↗</a></h3>
 <div class="video-grid">
-<figure><img src="videos/BestRL-350M_vs_TopFeatsRL-100M_P0.gif" alt="" loading="lazy"><figcaption><span>Our agent plays in P0 position</span><span class="outcome win">Win</span></figcaption></figure>
-<figure><img src="videos/BestRL-350M_vs_TopFeatsRL-100M_P1.gif" alt="" loading="lazy"><figcaption><span>Our agent plays in P1 position</span><span class="outcome win">Win</span></figcaption></figure>
+<figure><img src="videos/UECD-Best_vs_TopFeatsRL-100M_P0.gif" alt="" loading="lazy"><figcaption><span>Our agent plays in P0 position</span><span class="outcome win">Win</span></figcaption></figure>
+<figure><img src="videos/UECD-Best_vs_TopFeatsRL-100M_P1.gif" alt="" loading="lazy"><figcaption><span>Our agent plays in P1 position</span><span class="outcome win">Win</span></figcaption></figure>
 </div>
 </div>
 
 <div class="matchup">
 <h3 id="vs-obibotkenobi">vs ObiBotKenobi <a href="https://github.com/Jannis42/MicroRTSObiBotKenobi" class="ref-link" target="_blank" rel="noopener">source ↗</a></h3>
 <div class="video-grid">
-<figure><img src="videos/BestRL-350M_vs_ObiBotKenobi_P0.gif" alt="" loading="lazy"><figcaption><span>Our agent plays in P0 position</span><span class="outcome win">Win</span></figcaption></figure>
-<figure><img src="videos/BestRL-350M_vs_ObiBotKenobi_P1.gif" alt="" loading="lazy"><figcaption><span>Our agent plays in P1 position</span><span class="outcome win">Win</span></figcaption></figure>
+<figure><img src="videos/UECD-Best_vs_ObiBotKenobi_P0.gif" alt="" loading="lazy"><figcaption><span>Our agent plays in P0 position</span><span class="outcome win">Win</span></figcaption></figure>
+<figure><img src="videos/UECD-Best_vs_ObiBotKenobi_P1.gif" alt="" loading="lazy"><figcaption><span>Our agent plays in P1 position</span><span class="outcome win">Win</span></figcaption></figure>
 </div>
 </div>
 
 <div class="matchup">
 <h3 id="vs-allfeatsrl-100m">vs AllFeatsRL-100M <a href="https://github.com/mathisdelsart/microrts-drl-uecd" class="ref-link" target="_blank" rel="noopener">source ↗</a></h3>
 <div class="video-grid">
-<figure><img src="videos/BestRL-350M_vs_AllFeatsRL-100M_P0.gif" alt="" loading="lazy"><figcaption><span>Our agent plays in P0 position</span><span class="outcome win">Win</span></figcaption></figure>
-<figure><img src="videos/BestRL-350M_vs_AllFeatsRL-100M_P1.gif" alt="" loading="lazy"><figcaption><span>Our agent plays in P1 position</span><span class="outcome win">Win</span></figcaption></figure>
+<figure><img src="videos/UECD-Best_vs_AllFeatsRL-100M_P0.gif" alt="" loading="lazy"><figcaption><span>Our agent plays in P0 position</span><span class="outcome win">Win</span></figcaption></figure>
+<figure><img src="videos/UECD-Best_vs_AllFeatsRL-100M_P1.gif" alt="" loading="lazy"><figcaption><span>Our agent plays in P1 position</span><span class="outcome win">Win</span></figcaption></figure>
 </div>
 </div>
 
 <div class="matchup">
 <h3 id="vs-phasedrl-300m">vs PhasedRL-300M <a href="https://github.com/mathisdelsart/microrts-drl-uecd" class="ref-link" target="_blank" rel="noopener">source ↗</a></h3>
 <div class="video-grid">
-<figure><img src="videos/BestRL-350M_vs_PhasedRL-300M_P0.gif" alt="" loading="lazy"><figcaption><span>Our agent plays in P0 position</span><span class="outcome win">Win</span></figcaption></figure>
-<figure><img src="videos/BestRL-350M_vs_PhasedRL-300M_P1.gif" alt="" loading="lazy"><figcaption><span>Our agent plays in P1 position</span><span class="outcome win">Win</span></figcaption></figure>
+<figure><img src="videos/UECD-Best_vs_PhasedRL-300M_P0.gif" alt="" loading="lazy"><figcaption><span>Our agent plays in P0 position</span><span class="outcome win">Win</span></figcaption></figure>
+<figure><img src="videos/UECD-Best_vs_PhasedRL-300M_P1.gif" alt="" loading="lazy"><figcaption><span>Our agent plays in P1 position</span><span class="outcome win">Win</span></figcaption></figure>
 </div>
 </div>
 
 <div class="matchup">
 <h3 id="vs-coacai">vs CoacAI <a href="https://github.com/Coac/coac-ai-microrts" class="ref-link" target="_blank" rel="noopener">source ↗</a></h3>
 <div class="video-grid">
-<figure><img src="videos/BestRL-350M_vs_CoacAI_P0.gif" alt="" loading="lazy"><figcaption><span>Our agent plays in P0 position</span><span class="outcome win">Win</span></figcaption></figure>
-<figure><img src="videos/BestRL-350M_vs_CoacAI_P1.gif" alt="" loading="lazy"><figcaption><span>Our agent plays in P1 position</span><span class="outcome win">Win</span></figcaption></figure>
+<figure><img src="videos/UECD-Best_vs_CoacAI_P0.gif" alt="" loading="lazy"><figcaption><span>Our agent plays in P0 position</span><span class="outcome win">Win</span></figcaption></figure>
+<figure><img src="videos/UECD-Best_vs_CoacAI_P1.gif" alt="" loading="lazy"><figcaption><span>Our agent plays in P1 position</span><span class="outcome win">Win</span></figcaption></figure>
 </div>
 </div>
 
 <div class="matchup">
-<h3 id="vs-poworkerrush">vs POWorkerRush <a href="https://github.com/Farama-Foundation/MicroRTS/blob/master/src/ai/abstraction/partialobservability/POWorkerRush.java" class="ref-link" target="_blank" rel="noopener">source ↗</a></h3>
+<h3 id="vs-workerrush">vs WorkerRush <a href="https://github.com/Farama-Foundation/MicroRTS/blob/master/src/ai/abstraction/WorkerRush.java" class="ref-link" target="_blank" rel="noopener">source ↗</a></h3>
 <div class="video-grid">
-<figure><img src="videos/BestRL-350M_vs_POWorkerRush_P0.gif" alt="" loading="lazy"><figcaption><span>Our agent plays in P0 position</span><span class="outcome loss">Loss</span></figcaption></figure>
-<figure><img src="videos/BestRL-350M_vs_POWorkerRush_P1.gif" alt="" loading="lazy"><figcaption><span>Our agent plays in P1 position</span><span class="outcome win">Win</span></figcaption></figure>
+<figure><img src="videos/UECD-Best_vs_WorkerRush_P0.gif" alt="" loading="lazy"><figcaption><span>Our agent plays in P0 position</span><span class="outcome loss">Loss</span></figcaption></figure>
+<figure><img src="videos/UECD-Best_vs_WorkerRush_P1.gif" alt="" loading="lazy"><figcaption><span>Our agent plays in P1 position</span><span class="outcome win">Win</span></figcaption></figure>
 </div>
 </div>
 
 <div class="matchup">
 <h3 id="vs-mayari">vs Mayari <a href="https://github.com/barvazkrav/mayariBot" class="ref-link" target="_blank" rel="noopener">source ↗</a></h3>
 <div class="video-grid">
-<figure><img src="videos/BestRL-350M_vs_Mayari_P0.gif" alt="" loading="lazy"><figcaption><span>Our agent plays in P0 position</span><span class="outcome win">Win</span></figcaption></figure>
-<figure><img src="videos/BestRL-350M_vs_Mayari_P1.gif" alt="" loading="lazy"><figcaption><span>Our agent plays in P1 position</span><span class="outcome win">Win</span></figcaption></figure>
+<figure><img src="videos/UECD-Best_vs_Mayari_P0.gif" alt="" loading="lazy"><figcaption><span>Our agent plays in P0 position</span><span class="outcome win">Win</span></figcaption></figure>
+<figure><img src="videos/UECD-Best_vs_Mayari_P1.gif" alt="" loading="lazy"><figcaption><span>Our agent plays in P1 position</span><span class="outcome win">Win</span></figcaption></figure>
 </div>
 </div>
 
 <div class="matchup">
 <h3 id="vs-mixedbot">vs MixedBot <a href="https://github.com/AmoyZhp/MixedBotmRTS" class="ref-link" target="_blank" rel="noopener">source ↗</a></h3>
 <div class="video-grid">
-<figure><img src="videos/BestRL-350M_vs_MixedBot_P0.gif" alt="" loading="lazy"><figcaption><span>Our agent plays in P0 position</span><span class="outcome win">Win</span></figcaption></figure>
-<figure><img src="videos/BestRL-350M_vs_MixedBot_P1.gif" alt="" loading="lazy"><figcaption><span>Our agent plays in P1 position</span><span class="outcome win">Win</span></figcaption></figure>
+<figure><img src="videos/UECD-Best_vs_MixedBot_P0.gif" alt="" loading="lazy"><figcaption><span>Our agent plays in P0 position</span><span class="outcome win">Win</span></figcaption></figure>
+<figure><img src="videos/UECD-Best_vs_MixedBot_P1.gif" alt="" loading="lazy"><figcaption><span>Our agent plays in P1 position</span><span class="outcome win">Win</span></figcaption></figure>
 </div>
 </div>
 
 <div class="matchup">
 <h3 id="vs-droplet">vs Droplet <a href="https://github.com/zuozhiyang/Droplet" class="ref-link" target="_blank" rel="noopener">source ↗</a></h3>
 <div class="video-grid">
-<figure><img src="videos/BestRL-350M_vs_Droplet_P0.gif" alt="" loading="lazy"><figcaption><span>Our agent plays in P0 position</span><span class="outcome win">Win</span></figcaption></figure>
-<figure><img src="videos/BestRL-350M_vs_Droplet_P1.gif" alt="" loading="lazy"><figcaption><span>Our agent plays in P1 position</span><span class="outcome win">Win</span></figcaption></figure>
+<figure><img src="videos/UECD-Best_vs_Droplet_P0.gif" alt="" loading="lazy"><figcaption><span>Our agent plays in P0 position</span><span class="outcome win">Win</span></figcaption></figure>
+<figure><img src="videos/UECD-Best_vs_Droplet_P1.gif" alt="" loading="lazy"><figcaption><span>Our agent plays in P1 position</span><span class="outcome win">Win</span></figcaption></figure>
 </div>
 </div>
 
 <div class="matchup">
 <h3 id="vs-gridnet-300m">vs GridNet-300M <a href="https://github.com/Farama-Foundation/MicroRTS-Py" class="ref-link" target="_blank" rel="noopener">source ↗</a></h3>
 <div class="video-grid">
-<figure><img src="videos/BestRL-350M_vs_GridNet-300M_P0.gif" alt="" loading="lazy"><figcaption><span>Our agent plays in P0 position</span><span class="outcome win">Win</span></figcaption></figure>
-<figure><img src="videos/BestRL-350M_vs_GridNet-300M_P1.gif" alt="" loading="lazy"><figcaption><span>Our agent plays in P1 position</span><span class="outcome win">Win</span></figcaption></figure>
+<figure><img src="videos/UECD-Best_vs_GridNet-300M_P0.gif" alt="" loading="lazy"><figcaption><span>Our agent plays in P0 position</span><span class="outcome win">Win</span></figcaption></figure>
+<figure><img src="videos/UECD-Best_vs_GridNet-300M_P1.gif" alt="" loading="lazy"><figcaption><span>Our agent plays in P1 position</span><span class="outcome win">Win</span></figcaption></figure>
 </div>
 </div>
 
 <div class="matchup">
 <h3 id="vs-tiamat">vs Tiamat <a href="https://github.com/jr9Hernandez/TiamatBot" class="ref-link" target="_blank" rel="noopener">source ↗</a></h3>
 <div class="video-grid">
-<figure><img src="videos/BestRL-350M_vs_Tiamat_P0.gif" alt="" loading="lazy"><figcaption><span>Our agent plays in P0 position</span><span class="outcome win">Win</span></figcaption></figure>
-<figure><img src="videos/BestRL-350M_vs_Tiamat_P1.gif" alt="" loading="lazy"><figcaption><span>Our agent plays in P1 position</span><span class="outcome win">Win</span></figcaption></figure>
+<figure><img src="videos/UECD-Best_vs_Tiamat_P0.gif" alt="" loading="lazy"><figcaption><span>Our agent plays in P0 position</span><span class="outcome win">Win</span></figcaption></figure>
+<figure><img src="videos/UECD-Best_vs_Tiamat_P1.gif" alt="" loading="lazy"><figcaption><span>Our agent plays in P1 position</span><span class="outcome win">Win</span></figcaption></figure>
 </div>
 </div>
 
 <div class="matchup">
 <h3 id="vs-strategytactics">vs StrategyTactics <a href="https://github.com/nbarriga/microRTSbot" class="ref-link" target="_blank" rel="noopener">source ↗</a></h3>
 <div class="video-grid">
-<figure><img src="videos/BestRL-350M_vs_StrategyTactics_P0.gif" alt="" loading="lazy"><figcaption><span>Our agent plays in P0 position</span><span class="outcome win">Win</span></figcaption></figure>
-<figure><img src="videos/BestRL-350M_vs_StrategyTactics_P1.gif" alt="" loading="lazy"><figcaption><span>Our agent plays in P1 position</span><span class="outcome win">Win</span></figcaption></figure>
+<figure><img src="videos/UECD-Best_vs_StrategyTactics_P0.gif" alt="" loading="lazy"><figcaption><span>Our agent plays in P0 position</span><span class="outcome win">Win</span></figcaption></figure>
+<figure><img src="videos/UECD-Best_vs_StrategyTactics_P1.gif" alt="" loading="lazy"><figcaption><span>Our agent plays in P1 position</span><span class="outcome win">Win</span></figcaption></figure>
 </div>
 </div>
 
 <div class="matchup">
 <h3 id="vs-naivemcts">vs NaiveMCTS <a href="https://github.com/Farama-Foundation/MicroRTS/blob/master/src/ai/mcts/naivemcts/NaiveMCTS.java" class="ref-link" target="_blank" rel="noopener">source ↗</a></h3>
 <div class="video-grid">
-<figure><img src="videos/BestRL-350M_vs_NaiveMCTS_P0.gif" alt="" loading="lazy"><figcaption><span>Our agent plays in P0 position</span><span class="outcome win">Win</span></figcaption></figure>
-<figure><img src="videos/BestRL-350M_vs_NaiveMCTS_P1.gif" alt="" loading="lazy"><figcaption><span>Our agent plays in P1 position</span><span class="outcome win">Win</span></figcaption></figure>
+<figure><img src="videos/UECD-Best_vs_NaiveMCTS_P0.gif" alt="" loading="lazy"><figcaption><span>Our agent plays in P0 position</span><span class="outcome win">Win</span></figcaption></figure>
+<figure><img src="videos/UECD-Best_vs_NaiveMCTS_P1.gif" alt="" loading="lazy"><figcaption><span>Our agent plays in P1 position</span><span class="outcome win">Win</span></figcaption></figure>
 </div>
 </div>
 
 <div class="matchup">
-<h3 id="vs-polightrush">vs POLightRush <a href="https://github.com/Farama-Foundation/MicroRTS/blob/master/src/ai/abstraction/partialobservability/POLightRush.java" class="ref-link" target="_blank" rel="noopener">source ↗</a></h3>
+<h3 id="vs-lightrush">vs LightRush <a href="https://github.com/Farama-Foundation/MicroRTS/blob/master/src/ai/abstraction/LightRush.java" class="ref-link" target="_blank" rel="noopener">source ↗</a></h3>
 <div class="video-grid">
-<figure><img src="videos/BestRL-350M_vs_POLightRush_P0.gif" alt="" loading="lazy"><figcaption><span>Our agent plays in P0 position</span><span class="outcome win">Win</span></figcaption></figure>
-<figure><img src="videos/BestRL-350M_vs_POLightRush_P1.gif" alt="" loading="lazy"><figcaption><span>Our agent plays in P1 position</span><span class="outcome win">Win</span></figcaption></figure>
+<figure><img src="videos/UECD-Best_vs_LightRush_P0.gif" alt="" loading="lazy"><figcaption><span>Our agent plays in P0 position</span><span class="outcome win">Win</span></figcaption></figure>
+<figure><img src="videos/UECD-Best_vs_LightRush_P1.gif" alt="" loading="lazy"><figcaption><span>Our agent plays in P1 position</span><span class="outcome win">Win</span></figcaption></figure>
 </div>
 </div>
 
 <div class="matchup">
 <h3 id="vs-randombiasedai">vs RandomBiasedAI <a href="https://github.com/Farama-Foundation/MicroRTS/blob/master/src/ai/RandomBiasedAI.java" class="ref-link" target="_blank" rel="noopener">source ↗</a></h3>
 <div class="video-grid">
-<figure><img src="videos/BestRL-350M_vs_RandomBiasedAI_P0.gif" alt="" loading="lazy"><figcaption><span>Our agent plays in P0 position</span><span class="outcome win">Win</span></figcaption></figure>
-<figure><img src="videos/BestRL-350M_vs_RandomBiasedAI_P1.gif" alt="" loading="lazy"><figcaption><span>Our agent plays in P1 position</span><span class="outcome win">Win</span></figcaption></figure>
+<figure><img src="videos/UECD-Best_vs_RandomBiasedAI_P0.gif" alt="" loading="lazy"><figcaption><span>Our agent plays in P0 position</span><span class="outcome win">Win</span></figcaption></figure>
+<figure><img src="videos/UECD-Best_vs_RandomBiasedAI_P1.gif" alt="" loading="lazy"><figcaption><span>Our agent plays in P1 position</span><span class="outcome win">Win</span></figcaption></figure>
 </div>
 </div>
 

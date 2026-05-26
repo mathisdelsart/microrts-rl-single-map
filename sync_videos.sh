@@ -49,8 +49,8 @@ MAP_SHORT="basesWorkers16x16A"
 
 BOTS=(
   RAISocketAI UtsImass TMA TopFeatsRL-100M ObiBotKenobi AllFeatsRL-100M
-  PhasedRL-300M CoacAI POWorkerRush Mayari MixedBot Droplet
-  GridNet-300M Tiamat StrategyTactics NaiveMCTS POLightRush RandomBiasedAI
+  PhasedRL-300M CoacAI WorkerRush Mayari MixedBot Droplet
+  GridNet-300M Tiamat StrategyTactics NaiveMCTS LightRush RandomBiasedAI
 )
 
 mkdir -p "$DST"
@@ -59,8 +59,8 @@ done_count=0
 missing=0
 for bot in "${BOTS[@]}"; do
   for pos in 0 1; do
-    src_file="$SRC/BestRL-350M_vs_$bot/${MAP_SHORT}_P${pos}_game01.mp4"
-    dst_file="$DST/BestRL-350M_vs_${bot}_P${pos}.gif"
+    src_file="$SRC/UECD-Best_vs_$bot/${MAP_SHORT}_P${pos}_game01.mp4"
+    dst_file="$DST/UECD-Best_vs_${bot}_P${pos}.gif"
     if [[ -f "$src_file" ]]; then
       ffmpeg -y -v error -i "$src_file" \
         -vf "crop=640:612:0:28,setpts=2*PTS,fps=15,split[s0][s1];[s0]palettegen[p];[s1][p]paletteuse" \
