@@ -629,16 +629,16 @@ This page hosts the supplementary material for the Work-in-Progress paper on com
 <a href="#vs-raisocketai">vs RAISocketAI</a>
 <a href="#vs-utsimass">vs UtsImass</a>
 <a href="#vs-tma">vs TMA</a>
-<a href="#vs-topfeatsrl-100m">vs TopFeatsRL-100M</a>
+<a href="#vs-uecd-topfeats">vs UECD-TopFeats</a>
 <a href="#vs-obibotkenobi">vs ObiBotKenobi</a>
-<a href="#vs-allfeatsrl-100m">vs AllFeatsRL-100M</a>
-<a href="#vs-phasedrl-300m">vs PhasedRL-300M</a>
+<a href="#vs-uecd-allfeats">vs UECD-AllFeats</a>
+<a href="#vs-uecd-rushed">vs UECD-Rushed</a>
 <a href="#vs-coacai">vs CoacAI</a>
 <a href="#vs-workerrush">vs WorkerRush</a>
 <a href="#vs-mayari">vs Mayari</a>
 <a href="#vs-mixedbot">vs MixedBot</a>
 <a href="#vs-droplet">vs Droplet</a>
-<a href="#vs-gridnet-300m">vs GridNet-300M</a>
+<a href="#vs-gridnet">vs GridNet</a>
 <a href="#vs-tiamat">vs Tiamat</a>
 <a href="#vs-strategytactics">vs StrategyTactics</a>
 <a href="#vs-naivemcts">vs NaiveMCTS</a>
@@ -693,10 +693,10 @@ Recordings below show our single-map agent (`UECD-Best`) playing one game per st
 </div>
 
 <div class="matchup">
-<h3 id="vs-topfeatsrl-100m">vs TopFeatsRL-100M <a href="https://github.com/mathisdelsart/microrts-drl-uecd" class="ref-link" target="_blank" rel="noopener">source ↗</a></h3>
+<h3 id="vs-uecd-topfeats">vs UECD-TopFeats <a href="https://github.com/mathisdelsart/microrts-drl-uecd" class="ref-link" target="_blank" rel="noopener">source ↗</a></h3>
 <div class="video-grid">
-<figure><img src="videos/UECD-Best_vs_TopFeatsRL-100M_P0.gif" alt="" loading="lazy"><figcaption><span>Our agent plays in P0 position</span><span class="outcome win">Win</span></figcaption></figure>
-<figure><img src="videos/UECD-Best_vs_TopFeatsRL-100M_P1.gif" alt="" loading="lazy"><figcaption><span>Our agent plays in P1 position</span><span class="outcome win">Win</span></figcaption></figure>
+<figure><img src="videos/UECD-Best_vs_UECD-TopFeats_P0.gif" alt="" loading="lazy"><figcaption><span>Our agent plays in P0 position</span><span class="outcome win">Win</span></figcaption></figure>
+<figure><img src="videos/UECD-Best_vs_UECD-TopFeats_P1.gif" alt="" loading="lazy"><figcaption><span>Our agent plays in P1 position</span><span class="outcome win">Win</span></figcaption></figure>
 </div>
 </div>
 
@@ -709,18 +709,18 @@ Recordings below show our single-map agent (`UECD-Best`) playing one game per st
 </div>
 
 <div class="matchup">
-<h3 id="vs-allfeatsrl-100m">vs AllFeatsRL-100M <a href="https://github.com/mathisdelsart/microrts-drl-uecd" class="ref-link" target="_blank" rel="noopener">source ↗</a></h3>
+<h3 id="vs-uecd-allfeats">vs UECD-AllFeats <a href="https://github.com/mathisdelsart/microrts-drl-uecd" class="ref-link" target="_blank" rel="noopener">source ↗</a></h3>
 <div class="video-grid">
-<figure><img src="videos/UECD-Best_vs_AllFeatsRL-100M_P0.gif" alt="" loading="lazy"><figcaption><span>Our agent plays in P0 position</span><span class="outcome win">Win</span></figcaption></figure>
-<figure><img src="videos/UECD-Best_vs_AllFeatsRL-100M_P1.gif" alt="" loading="lazy"><figcaption><span>Our agent plays in P1 position</span><span class="outcome win">Win</span></figcaption></figure>
+<figure><img src="videos/UECD-Best_vs_UECD-AllFeats_P0.gif" alt="" loading="lazy"><figcaption><span>Our agent plays in P0 position</span><span class="outcome win">Win</span></figcaption></figure>
+<figure><img src="videos/UECD-Best_vs_UECD-AllFeats_P1.gif" alt="" loading="lazy"><figcaption><span>Our agent plays in P1 position</span><span class="outcome win">Win</span></figcaption></figure>
 </div>
 </div>
 
 <div class="matchup">
-<h3 id="vs-phasedrl-300m">vs PhasedRL-300M <a href="https://github.com/mathisdelsart/microrts-drl-uecd" class="ref-link" target="_blank" rel="noopener">source ↗</a></h3>
+<h3 id="vs-uecd-rushed">vs UECD-Rushed <a href="https://github.com/mathisdelsart/microrts-drl-uecd" class="ref-link" target="_blank" rel="noopener">source ↗</a></h3>
 <div class="video-grid">
-<figure><img src="videos/UECD-Best_vs_PhasedRL-300M_P0.gif" alt="" loading="lazy"><figcaption><span>Our agent plays in P0 position</span><span class="outcome win">Win</span></figcaption></figure>
-<figure><img src="videos/UECD-Best_vs_PhasedRL-300M_P1.gif" alt="" loading="lazy"><figcaption><span>Our agent plays in P1 position</span><span class="outcome win">Win</span></figcaption></figure>
+<figure><img src="videos/UECD-Best_vs_UECD-Rushed_P0.gif" alt="" loading="lazy"><figcaption><span>Our agent plays in P0 position</span><span class="outcome win">Win</span></figcaption></figure>
+<figure><img src="videos/UECD-Best_vs_UECD-Rushed_P1.gif" alt="" loading="lazy"><figcaption><span>Our agent plays in P1 position</span><span class="outcome win">Win</span></figcaption></figure>
 </div>
 </div>
 
@@ -765,10 +765,10 @@ Recordings below show our single-map agent (`UECD-Best`) playing one game per st
 </div>
 
 <div class="matchup">
-<h3 id="vs-gridnet-300m">vs GridNet-300M <a href="https://github.com/Farama-Foundation/MicroRTS-Py" class="ref-link" target="_blank" rel="noopener">source ↗</a></h3>
+<h3 id="vs-gridnet">vs GridNet <a href="https://github.com/Farama-Foundation/MicroRTS-Py" class="ref-link" target="_blank" rel="noopener">source ↗</a></h3>
 <div class="video-grid">
-<figure><img src="videos/UECD-Best_vs_GridNet-300M_P0.gif" alt="" loading="lazy"><figcaption><span>Our agent plays in P0 position</span><span class="outcome win">Win</span></figcaption></figure>
-<figure><img src="videos/UECD-Best_vs_GridNet-300M_P1.gif" alt="" loading="lazy"><figcaption><span>Our agent plays in P1 position</span><span class="outcome win">Win</span></figcaption></figure>
+<figure><img src="videos/UECD-Best_vs_GridNet_P0.gif" alt="" loading="lazy"><figcaption><span>Our agent plays in P0 position</span><span class="outcome win">Win</span></figcaption></figure>
+<figure><img src="videos/UECD-Best_vs_GridNet_P1.gif" alt="" loading="lazy"><figcaption><span>Our agent plays in P1 position</span><span class="outcome win">Win</span></figcaption></figure>
 </div>
 </div>
 

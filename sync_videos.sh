@@ -48,9 +48,9 @@ DST="$SCRIPT_DIR/videos"
 MAP_SHORT="basesWorkers16x16A"
 
 BOTS=(
-  RAISocketAI UtsImass TMA TopFeatsRL-100M ObiBotKenobi AllFeatsRL-100M
-  PhasedRL-300M CoacAI WorkerRush Mayari MixedBot Droplet
-  GridNet-300M Tiamat StrategyTactics NaiveMCTS LightRush RandomBiasedAI
+  RAISocketAI UtsImass TMA UECD-TopFeats ObiBotKenobi UECD-AllFeats
+  UECD-Rushed CoacAI WorkerRush Mayari MixedBot Droplet
+  GridNet Tiamat StrategyTactics NaiveMCTS LightRush RandomBiasedAI
 )
 
 mkdir -p "$DST"
