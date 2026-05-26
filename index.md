@@ -588,7 +588,7 @@ code, pre { font-family: "JetBrains Mono", "SF Mono", Menlo, monospace !importan
 
 <div class="meta-bar">
   <div><span class="meta-label">Author</span> <span class="meta-value">Mathis Delsart</span></div>
-  <div><span class="meta-label">Last update</span> <span class="meta-value">April 20, 2026</span></div>
+  <div><span class="meta-label">Last update</span> <span class="meta-value">May 26, 2026</span></div>
   <div><span class="meta-label">Map</span> <span class="meta-value"><code>basesWorkers16x16A</code></span></div>
   <div><span class="meta-label">Evaluation</span> <span class="meta-value">deterministic policy</span></div>
 </div>
@@ -693,7 +693,7 @@ Recordings below show our single-map agent (`BestRL-350M`) playing one game per 
 </div>
 
 <div class="matchup">
-<h3 id="vs-topfeatsrl-100m">vs TopFeatsRL-100M <a href="https://github.com/mathisdelsart/MasterThesis" class="ref-link" target="_blank" rel="noopener">source ↗</a></h3>
+<h3 id="vs-topfeatsrl-100m">vs TopFeatsRL-100M <a href="https://github.com/mathisdelsart/microrts-drl-uecd" class="ref-link" target="_blank" rel="noopener">source ↗</a></h3>
 <div class="video-grid">
 <figure><img src="videos/BestRL-350M_vs_TopFeatsRL-100M_P0.gif" alt="" loading="lazy"><figcaption><span>Our agent plays in P0 position</span><span class="outcome win">Win</span></figcaption></figure>
 <figure><img src="videos/BestRL-350M_vs_TopFeatsRL-100M_P1.gif" alt="" loading="lazy"><figcaption><span>Our agent plays in P1 position</span><span class="outcome win">Win</span></figcaption></figure>
@@ -709,7 +709,7 @@ Recordings below show our single-map agent (`BestRL-350M`) playing one game per 
 </div>
 
 <div class="matchup">
-<h3 id="vs-allfeatsrl-100m">vs AllFeatsRL-100M <a href="https://github.com/mathisdelsart/MasterThesis" class="ref-link" target="_blank" rel="noopener">source ↗</a></h3>
+<h3 id="vs-allfeatsrl-100m">vs AllFeatsRL-100M <a href="https://github.com/mathisdelsart/microrts-drl-uecd" class="ref-link" target="_blank" rel="noopener">source ↗</a></h3>
 <div class="video-grid">
 <figure><img src="videos/BestRL-350M_vs_AllFeatsRL-100M_P0.gif" alt="" loading="lazy"><figcaption><span>Our agent plays in P0 position</span><span class="outcome win">Win</span></figcaption></figure>
 <figure><img src="videos/BestRL-350M_vs_AllFeatsRL-100M_P1.gif" alt="" loading="lazy"><figcaption><span>Our agent plays in P1 position</span><span class="outcome win">Win</span></figcaption></figure>
@@ -717,7 +717,7 @@ Recordings below show our single-map agent (`BestRL-350M`) playing one game per 
 </div>
 
 <div class="matchup">
-<h3 id="vs-phasedrl-300m">vs PhasedRL-300M <a href="https://github.com/mathisdelsart/MasterThesis" class="ref-link" target="_blank" rel="noopener">source ↗</a></h3>
+<h3 id="vs-phasedrl-300m">vs PhasedRL-300M <a href="https://github.com/mathisdelsart/microrts-drl-uecd" class="ref-link" target="_blank" rel="noopener">source ↗</a></h3>
 <div class="video-grid">
 <figure><img src="videos/BestRL-350M_vs_PhasedRL-300M_P0.gif" alt="" loading="lazy"><figcaption><span>Our agent plays in P0 position</span><span class="outcome win">Win</span></figcaption></figure>
 <figure><img src="videos/BestRL-350M_vs_PhasedRL-300M_P1.gif" alt="" loading="lazy"><figcaption><span>Our agent plays in P1 position</span><span class="outcome win">Win</span></figcaption></figure>

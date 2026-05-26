@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # ──────────────────────────────────────────────────────────────────────────
-# Build looping GIFs for the microrts-rl-single-map Jekyll site from MP4 recordings.
+# Build looping GIFs for the microrts-drl-uecd-website Jekyll site from MP4 recordings.
 #
 # Pipeline:
 #   1. `microrts_agent/record_bestrl_vs_tournament.sh` generates the source
@@ -30,8 +30,21 @@
 # ──────────────────────────────────────────────────────────────────────────
 set -e
 
-SRC="/Users/mathisdelsart/Desktop/MasterThesis/outputs/recordings"
-DST="/Users/mathisdelsart/Desktop/MasterThesis/microrts-rl-single-map/videos"
+# Everything is resolved relative to this script, so the pipeline keeps working
+# no matter how the folders are renamed or moved (no absolute paths).
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+# Raw MP4 recordings are vendored into this repo (recordings/) so it is fully
+# self-contained — anyone can regenerate the GIFs without the training repo.
+# Falls back to the sibling training repo (../MasterThesis) if present, and can
+# be overridden with SRC=... ./sync_videos.sh for any other layout.
+if [[ -d "$SCRIPT_DIR/recordings" ]]; then
+  DEFAULT_SRC="$SCRIPT_DIR/recordings"
+else
+  DEFAULT_SRC="$SCRIPT_DIR/../MasterThesis/outputs/recordings"
+fi
+SRC="${SRC:-$DEFAULT_SRC}"
+# GIFs are written into THIS site repo's videos/ folder.
+DST="$SCRIPT_DIR/videos"
 MAP_SHORT="basesWorkers16x16A"
 
 BOTS=(

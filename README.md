@@ -4,8 +4,8 @@
 
 This repository hosts the source of a Jekyll-based GitHub Pages site that collects **reproducible evidence** behind the tournament results reported in the paper: game recordings, head-to-head matrices, and game-theoretic rankings (Nash, Alpha-Rank, Copeland, robustness) for a deep RL agent trained and evaluated on the single-map `basesWorkers16x16A` MicroRTS setting.
 
-**Live site:** [mathisdelsart.github.io/microrts-rl-single-map](https://mathisdelsart.github.io/microrts-rl-single-map/)  
-**Training code:** [mathisdelsart/MasterThesis](https://github.com/mathisdelsart/MasterThesis)
+**Live site:** [mathisdelsart.github.io/microrts-drl-uecd-website](https://mathisdelsart.github.io/microrts-drl-uecd-website/)  
+**Training code:** [mathisdelsart/microrts-drl-uecd](https://github.com/mathisdelsart/microrts-drl-uecd)
 
 ---
 
@@ -50,7 +50,7 @@ The single loss occurs against `POWorkerRush` when the agent starts in position 
   </tr>
 </table>
 
-All 36 recordings and their starting-position variants are available on the [live site](https://mathisdelsart.github.io/microrts-rl-single-map/#example-games).
+All 36 recordings and their starting-position variants are available on the [live site](https://mathisdelsart.github.io/microrts-drl-uecd-website/#example-games).
 
 ---
 
@@ -99,7 +99,7 @@ bundle exec jekyll serve --livereload
 
 ### Refreshing media assets
 
-- `figures/` — regenerated from the analysis scripts in [mathisdelsart/MasterThesis](https://github.com/mathisdelsart/MasterThesis).
+- `figures/` — regenerated from the analysis scripts in [mathisdelsart/microrts-drl-uecd](https://github.com/mathisdelsart/microrts-drl-uecd).
 - `videos/` — can be re-synced from a local training output directory with `./sync_videos.sh` (edit the paths at the top of the script first).
 
 ---
@@ -115,7 +115,7 @@ If you use these materials, please cite the Work-in-Progress paper. A full BibTe
 Questions, feedback, or collaboration inquiries are welcome via GitHub issues or direct contact.
 
 - [GitHub profile](https://github.com/mathisdelsart)
-- [Training & research repository](https://github.com/mathisdelsart/MasterThesis)
+- [Training & research repository](https://github.com/mathisdelsart/microrts-drl-uecd)
 
 ## License
 
